@@ -3,38 +3,13 @@ footer {
   background-color: #fff;
   padding: 30px 20px 20px;  
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
-}
+} 
 
 .footer-line {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 2px solid #575757;
+    border-bottom: 1px solid #575757;
 }
-
 
 .footer-text a {
   color: #ff6e64;
   text-decoration: none;
-}
-
-.social-icons a {
-  color: #000;
-  margin-left: 15px;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.social-icons a:hover {
-  color: #ff6e64;
-}
-
-@media (max-width: 600px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .social-icons {
-    margin-top: 10px;
-  }
 }
