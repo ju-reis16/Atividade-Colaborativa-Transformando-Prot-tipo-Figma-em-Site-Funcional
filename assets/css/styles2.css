@@ -123,15 +123,36 @@ body {
   transition: transform 0.2s;
 }
 
-.card:hover {
+.card_breakfast:hover{
   transform: translateY(-5px);
 }
 
-.card img {
+.card_vegan:hover{
+  transform: translateY(-5px);
+}
+
+.card_meat:hover{
+  transform: translateY(-5px);
+}
+
+.card_dessert:hover{
+  transform: translateY(-5px);
+}
+
+.card_lunch:hover{
+  transform: translateY(-5px);
+}
+
+.card_chocolate:hover{
+  transform: translateY(-5px);
+}
+
+.cards img {
   width: 60px;
   margin-bottom: 12px;
 }
 
-.card p {
+.cards p {
   font-weight: 500;
+  padding-top: 5px;
 }
