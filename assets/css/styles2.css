@@ -23,3 +23,17 @@ body {
   font-size: 28px;
   font-weight: bold;
 }
+
+.view-btn {
+  background: #e6f4ff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #cce7ff;
+}
