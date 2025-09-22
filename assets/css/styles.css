@@ -67,4 +67,68 @@ button {
 .imagem img {
   width: 400px;
   border-radius: 20px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+.logo {
+    font-family: "Lobster", sans-serif;
+    color: black;
+    margin-left: 1%;
+    font-size: 130%;
+    padding: 40px 60px;
+}
+
+.logo .dot {
+    color: orange;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    font-family: "Arimo", sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cabecalho {
+    position: fixed;
+    width: 100vw;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.social {
+    display: flex;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.social a:hover {
+  color: orange;
 }
