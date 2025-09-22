@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
 .logo {
     font-family: "Lobster", sans-serif;
     color: black;
     margin-left: 1%;
-    padding: 25px 40px;
+    font-size: 130%;
+    padding: 40px 60px;
 }
 
 .logo .dot {
@@ -16,6 +18,7 @@
     display: flex;
     padding: 10px;
     justify-content: center;
+    font-family: "Arimo", sans-serif;
 }
 
 .menu a {
@@ -33,14 +36,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
 }
 
 .cabecalho {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     background: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.social {
+    display: flex;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.social a:hover {
+  color: orange;
 }
