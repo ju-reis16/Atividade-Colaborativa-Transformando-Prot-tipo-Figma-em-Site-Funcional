@@ -8,5 +8,40 @@
 }
 
 .logo .dot {
-  color: orange;
+    color: orange;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cabecalho {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
