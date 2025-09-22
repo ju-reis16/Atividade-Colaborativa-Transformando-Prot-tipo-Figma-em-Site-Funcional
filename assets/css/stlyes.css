@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
 footer {
   background-color: #fff;
   padding: 50px 40px 40px;  
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
 } 
+
+.text{
+
+}
+
 .text h2{
+
    font-family: "Lobster", sans-serif;
 }
 .text a { 
@@ -25,7 +30,16 @@ color: #ff6e64;
 .footer-text a {
   color: #ff6e64;
 }
+
 .icons{
-  color: black;
-  height: 20%;
+  gap: 15px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
+
+ .icons img {
+  height: 20px;
+  width: 20px;
+}
+
