@@ -1,15 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 footer {
   background-color: #fff;
-  padding: 30px 20px 20px;  
+  padding: 50px 40px 40px;  
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
 } 
-
+.text h2{
+   font-family: "Lobster", sans-serif;
+}
+.text a { 
+color: #ff6e64;
+}
+.text p{
+  color: #727272;
+}
 .footer-line {
     border-bottom: 1px solid #575757;
+}
+.footer-text p{
+  text-align: center;
+  color: #727272;
 }
 
 .footer-text a {
   color: #ff6e64;
-  text-decoration: none;
+}
+.icons{
+  color: black;
 }
