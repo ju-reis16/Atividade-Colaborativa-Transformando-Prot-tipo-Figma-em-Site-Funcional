@@ -776,3 +776,99 @@ body {
   }
   
 } 
+
+}
+
+.cards2{
+    justify-content: center;
+    display:grid;
+    gap: 150px;
+    width:100%;
+     display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    row-gap: 30px;
+    padding-bottom: 50px;
+}
+
+.card2 2{
+    background-color: rgb(231, 241, 251);
+    border-radius: 20px;
+    width: 300px;
+    color: black;
+    padding: 5px;
+    box-shadow: center;
+    text-align: center;
+    height: 300px;
+}
+
+.card2 h3{
+    margin: 0 0 8px;
+    color: black;
+    padding-top: 10px;
+}
+
+.card2 p{
+    margin: 0 0 12px;
+    color: black;
+    padding-top: 50px;
+}
+.card2 img{
+    height:60%;
+    width: 100%;
+    border-radius: 20px;
+} 
+
+
+.text h2{
+
+   font-family: "Lobster", sans-serif;
+}
+.text a { 
+color: #ff6e64;
+}
+.text p{
+  color: #727272;
+}
+
+.categorias {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.categorias a{
+text-decoration: none;
+color: black;
+}
+
+.footer-line {
+    border-bottom: 1px solid #575757;
+}
+.footer-text p{
+  text-align: center;
+  color: #727272;
+}
+
+.footer-text a {
+  color: #ff6e64;
+}
+
+.icons{
+  gap: 15px;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+ .icons img {
+  height: 20px;
+  width: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+footer {
+  background-color: #fff;
+  padding: 50px 40px 40px;  
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.2);
+} 
