@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -18,6 +19,7 @@ p {
   color: gray;
   line-height: 1.5;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
@@ -141,27 +143,27 @@ body {
   transition: transform 0.2s;
 }
 
-.card_breakfast:hover{
+.card_breakfast:hover {
   transform: translateY(-5px);
 }
 
-.card_vegan:hover{
+.card_vegan:hover {
   transform: translateY(-5px);
 }
 
-.card_meat:hover{
+.card_meat:hover {
   transform: translateY(-5px);
 }
 
-.card_dessert:hover{
+.card_dessert:hover {
   transform: translateY(-5px);
 }
 
-.card_lunch:hover{
+.card_lunch:hover {
   transform: translateY(-5px);
 }
 
-.card_chocolate:hover{
+.card_chocolate:hover {
   transform: translateY(-5px);
 }
 
@@ -174,6 +176,7 @@ body {
   font-weight: 500;
   padding-top: 5px;
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -225,8 +228,9 @@ h1 {
 }
 
 .autor img {
- padding: 5%;
-  height: 100px;;
+  padding: 5%;
+  height: 100px;
+  ;
   border-radius: 70%;
   margin-right: 20px;
 }
@@ -244,48 +248,48 @@ button {
   width: 400px;
   border-radius: 20px;
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
-.logo {
+  .logo {
     font-family: "Lobster", sans-serif;
     color: black;
     margin-left: 1%;
     font-size: 130%;
     padding: 40px 60px;
-}
+  }
 
-.logo .dot {
+  .logo .dot {
     color: orange;
-}
+  }
 
-.menu {
+  .menu {
     list-style: none;
     display: flex;
     padding: 10px;
     justify-content: center;
     font-family: "Arimo", sans-serif;
-}
+  }
 
-.menu a {
+  .menu a {
     text-decoration: none;
     color: black;
     font-weight: 500;
-}
+  }
 
-.menu a:hover {
+  .menu a:hover {
     color: orange;
-}
+  }
 
-.menu ul {
+  .menu ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-}
+  }
 
-.cabecalho {
+  .cabecalho {
     position: fixed;
     width: 100vw;
     background: #fff;
@@ -293,19 +297,19 @@ button {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #ddd;
-}
+  }
 
-.social {
+  .social {
     display: flex;
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  justify-content: space-between;
-  align-items: end;
-  gap: 20px;
-}
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+  }
 
-.social a:hover {
-  color: orange;
-}
+  .social a:hover {
+    color: orange;
+  }
 }
