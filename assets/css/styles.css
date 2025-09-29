@@ -10,17 +10,303 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
-h1,h2,h3 {
-  margin: 0 0 15px;
+.cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 40px;
+  z-index: 1000;
 }
-
-p {
-  margin: 0 0 20px;
+.logo {
+  font-family: "Lobster", sans-serif;
+  font-size: 26px;
+  color: #000;
+}
+.logo .dot {
+  color: orange;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.social {
+  display: flex;
+  gap: 15px;
+}
+.social img {
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #dff3fa;
+  padding: 60px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 120px auto 50px;
+  gap: 40px;
+}
+.texto {
+  flex: 1;
+  text-align: left;
+}
+.tag {
+  background: rgb(255, 255, 255);
+  color: #000000;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.descricao {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+.info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+.info span {
+  margin-right: 20px;
+}
+button {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.imagem {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagem img.frango {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+.imagem img.confirm {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  padding-right: 200px;
+  border-radius: 50%;
+}
+.imagem img {
+  width: 600px;
+  border-radius: 16px;
+}
+/* Categorias */
+.Categories {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.Categories .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.Categories h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.view-btn {
+  background: #e6f4ff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 140px;
+  height: 160px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+.card img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+.card p {
+  font-weight: 500;
+}
+.card:hover {
+  transform: translateY(-6px);
+}
+.card_breakfast {
+  background: linear-gradient(to top, #f1f1f1, #fff);
+}
+.card_vegan {
+  background: linear-gradient(to top, #d4f9d4, #fff);
+}
+.card_meat {
+  background: linear-gradient(to top, #ffd9d9, #fff);
+}
+.card_dessert {
+  background: linear-gradient(to top, #ffeccc, #fff);
+}
+.card_lunch {
+  background: linear-gradient(to top, #e2e2e2, #fff);
+}
+.card_chocolate {
+  background: linear-gradient(to top, #f7d9ff, #fff);
+}
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+section h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+section p {
   font-size: 16px;
   color: #555;
 }
-
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .texto {
+    text-align: center;
+  }
+  .imagem img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+  .menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .banner {
+    margin-top: 150px;
+  }
+}
+/* Newsletter, Pesquisa e Imagens */
+.newsletter {
+  max-width: 600px; 
+  margin: 50px auto; 
+  padding: 20px;
+  background-color: #dcf1f1; 
+  border-radius: 50px; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+.newsletter h2 {
+  text-align: center; 
+  color: #333;
+}
+.newsletter p {
+  text-align: center;
+  color: #666;
+  line-height: 1.5; 
+}
+.subscribe-form {
+  display: flex; 
+  margin-top: 20px;
+}
+.pesquisa{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 18px;
+  height: 50px;
+}
+.pesquisa input {
+  flex: 1; 
+  padding: 10px;
+  border-radius: 5px 0 0 5px; 
+  border: none;
+}
+.pesquisa button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pesquisa button:hover {
+  background-color: #5d5b5b;
+}
+.images{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;  
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+.images .left{
+  width: 44%;
+  background-color: none;
+  border-radius: 0px 0px 0px 40px;
+  position: relative;
+  right: 20px;
+  top: 20px;
+}
+.images .right{
+  width: 30%;
+  top: 20px;
+  border-radius: 0px 0px 40px 0px;
+  background-color: none;
+  position: relative;
+  left: 20px;
+}
 .cabecalho {
   position: fixed;
   top: 0;
@@ -153,9 +439,9 @@ button {
 .imagem img {
   width: 600px;
   border-radius: 16px;
-
 }
 
+/* --- Categorias --- */
 .Categories {
   max-width: 1100px;
   margin: auto;
@@ -289,3 +575,204 @@ section p {
     margin-top: 150px;
   }
 }
+/* aqui */
+.newsletter {
+  max-width: 600px; 
+  margin: 50px auto; 
+  padding: 20px;
+  background-color: #dcf1f1; 
+  border-radius: 50px; 
+  /* cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  /* sombra "meio transparente" */
+}
+/* --- Newsletter, Pesquisa e Imagens (do CSS antigo) --- */
+
+/* título */
+.newsletter h2 {
+  text-align: center; 
+  color: #333;
+}
+
+/* parágrafo */
+.newsletter p {
+  text-align: center;
+  color: #666;
+  line-height: 1.5; 
+  /* espaço entre linhas */
+}
+
+/* formulário */
+.subscribe-form {
+  display: flex; 
+  /* coloca input(campo do fomulário) e botão na mesma linha */
+  margin-top: 20px;
+}
+
+.pesquisa{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 18px;
+  height: 50px;
+
+
+  /* campo de e-mail */
+  input {
+    flex: 1; 
+    padding: 10px;
+    border-radius: 5px 0 0 5px; 
+    border: none;
+    /* arredonda só os cantos da esquerda */
+  }
+  
+  /* botão */
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000; /* cor quando não passa o mouse */
+    color: white;
+    border-radius: 5px; 
+    /* arredonda só os cantos da direita */
+    cursor: pointer; /* muda a cor quando passa o mouse */
+  }
+  
+  /* botão quando passa o mouse */
+  button:hover {
+    background-color: #5d5b5b; /* cor depois que passa o mouse */
+  }
+  
+}
+/* imagens*/
+.images{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;  
+  padding: 0;
+  margin: 0;
+  height: auto;
+  
+  .left{
+    width: 44%;
+    background-color: none;
+    border-radius: 0px 0px 0px 40px;
+    position: relative;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .right{
+    width: 30%;
+    top: 20px;
+    border-radius: 0px 0px 40px 0px;
+    background-color: none;
+    position: relative;
+    left: 20px;
+  }
+  
+} 
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9; 
+  /* cor do fundo */
+}
+
+.newsletter {
+  max-width: 600px; 
+  margin: 50px auto; 
+  padding: 20px;
+  background-color: #dcf1f1; 
+  border-radius: 50px; 
+  /* cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  /* sombra "meio transparente" */
+}
+
+/* título */
+.newsletter h2 {
+  text-align: center; 
+  color: #333;
+}
+
+/* parágrafo */
+.newsletter p {
+  text-align: center;
+  color: #666;
+  line-height: 1.5; 
+  /* espaço entre linhas */
+}
+
+/* formulário */
+.subscribe-form {
+  display: flex; 
+  /* coloca input(campo do fomulário) e botão na mesma linha */
+  margin-top: 20px;
+}
+
+.pesquisa{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 18px;
+  height: 50px;
+
+
+  /* campo de e-mail */
+  input {
+    flex: 1; 
+    padding: 10px;
+    border-radius: 5px 0 0 5px; 
+    border: none;
+    /* arredonda só os cantos da esquerda */
+  }
+  
+  /* botão */
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000; /* cor quando não passa o mouse */
+    color: white;
+    border-radius: 5px; 
+    /* arredonda só os cantos da direita */
+    cursor: pointer; /* muda a cor quando passa o mouse */
+  }
+  
+  /* botão quando passa o mouse */
+  button:hover {
+    background-color: #5d5b5b; /* cor depois que passa o mouse */
+  }
+  
+}
+/* imagens*/
+.images{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;  
+  padding: 0;
+  margin: 0;
+  height: auto;
+  
+  .left{
+    width: 44%;
+    background-color: none;
+    border-radius: 0px 0px 0px 40px;
+    position: relative;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .right{
+    width: 30%;
+    top: 20px;
+    border-radius: 0px 0px 40px 0px;
+    background-color: none;
+    position: relative;
+    left: 20px;
+  }
+  
+} 
