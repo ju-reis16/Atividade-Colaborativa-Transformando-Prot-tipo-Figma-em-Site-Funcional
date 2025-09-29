@@ -1,47 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
   margin: 0;
-  padding: 50px;
-  background: #fff;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
+h1,h2,h3 {
+  margin: 0 0 15px;
 }
 
 p {
-  font-size: 20px;
-  color: gray;
-  line-height: 1.5;
+  margin: 0 0 20px;
+  font-size: 16px;
+  color: #555;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
+.cabecalho {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: "Lobster", sans-serif;
+  font-size: 26px;
+  color: #000;
+}
+
+.logo .dot {
+  color: orange;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+}
+
+.social img {
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #dff3fa;
+  padding: 60px;
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 120px auto 50px;
+  gap: 40px;
+}
+
+.texto {
+  flex: 1;
+  text-align: left;
+}
+
+.tag {
+  background: rgb(255, 255, 255);
+  color: #000000;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.descricao {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.info {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.info span {
+  margin-right: 20px;
+}
+
+button {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.imagem {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem img.frango {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+}
+
+.imagem img.confirm {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
+  padding-right: 200px;
+  border-radius: 50%;
+}
+
+.imagem img {
+  width: 600px;
+  border-radius: 16px;
+
 }
 
 .Categories {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
+  padding: 40px 20px;
 }
 
-.header {
+.Categories .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.header h2 {
-  font-size: 28px;
-  font-weight: bold;
+.Categories h2 {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .view-btn {
@@ -51,11 +181,6 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-.view-btn:hover {
-  background: #cce7ff;
 }
 
 .cards {
@@ -65,251 +190,102 @@ body {
   justify-content: center;
 }
 
-.card_breakfast {
-  width: 130px;
-  height: 150px;
-  background-image: linear-gradient(to top, rgb(226, 226, 226), rgb(255, 255, 255));
+.card {
+  width: 140px;
+  height: 160px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
-  transition: transform 0.2s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
 }
 
-.card_vegan {
-  width: 130px;
-  height: 150px;
-  background-image: linear-gradient(to top, rgb(223, 255, 223), rgb(255, 255, 255));
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
-  transition: transform 0.2s;
-}
-
-.card_meat {
-  width: 130px;
-  height: 150px;
-  background-image: linear-gradient(to top, rgb(255, 230, 230), rgb(255, 255, 255));
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
-  transition: transform 0.2s;
-}
-
-.card_dessert {
-  width: 130px;
-  height: 150px;
-  background-image: linear-gradient(to top, rgb(255, 243, 220), rgb(255, 255, 255));
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
-  transition: transform 0.2s;
-}
-
-.card_lunch {
-  width: 130px;
-  height: 150px;
-  background-image: linear-gradient(to top, rgb(226, 226, 226), rgb(255, 255, 255));
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
-  transition: transform 0.2s;
-}
-
-.card_chocolate {
-  width: 130px;
-  height: 150px;
-  background-image: linear-gradient(to top, rgb(226, 226, 226), rgb(255, 255, 255));
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
-  transition: transform 0.2s;
-}
-
-.card_breakfast:hover {
-  transform: translateY(-5px);
-}
-
-.card_vegan:hover {
-  transform: translateY(-5px);
-}
-
-.card_meat:hover {
-  transform: translateY(-5px);
-}
-
-.card_dessert:hover {
-  transform: translateY(-5px);
-}
-
-.card_lunch:hover {
-  transform: translateY(-5px);
-}
-
-.card_chocolate:hover {
-  transform: translateY(-5px);
-}
-
-.cards img {
+.card img {
   width: 60px;
   margin-bottom: 12px;
 }
 
-.cards p {
+.card p {
   font-weight: 500;
-  padding-top: 5px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
+.card:hover {
+  transform: translateY(-6px);
 }
 
-.banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #dff3fa;
-  padding: 20px;
-  border-radius: 5px;
+.card_breakfast {
+  background: linear-gradient(to top, #f1f1f1, #fff);
+}
+
+.card_vegan {
+  background: linear-gradient(to top, #d4f9d4, #fff);
+}
+
+.card_meat {
+  background: linear-gradient(to top, #ffd9d9, #fff);
+}
+
+.card_dessert {
+  background: linear-gradient(to top, #ffeccc, #fff);
+}
+
+.card_lunch {
+  background: linear-gradient(to top, #e2e2e2, #fff);
+}
+
+.card_chocolate {
+  background: linear-gradient(to top, #f7d9ff, #fff);
+}
+
+section {
   max-width: 900px;
-  margin: 30px auto;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
-.texto {
-  max-width: 50%;
-}
-
-.tag {
-  background: white;
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-h1 {
+section h1 {
   font-size: 28px;
-  margin: 10px 0;
-}
-
-.descricao {
-  font-size: 14px;
-  color: #555;
   margin-bottom: 15px;
 }
 
-.info span {
-  margin-right: 20px;
-  font-size: 14px;
+section p {
+  font-size: 16px;
+  color: #555;
 }
 
-.autor {
-  margin: 10px 20;
+@media (max-width: 900px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .texto {
+    text-align: center;
+  }
+
+  .imagem img {
+    max-width: 100%;
+  }
 }
 
-.autor img {
-  padding: 5%;
-  height: 100px;
-  ;
-  border-radius: 70%;
-  margin-right: 20px;
-}
-
-button {
-  background: black;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.imagem img {
-  width: 400px;
-  border-radius: 20px;
-
-  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
-
-  .logo {
-    font-family: "Lobster", sans-serif;
-    color: black;
-    margin-left: 1%;
-    font-size: 130%;
-    padding: 40px 60px;
-  }
-
-  .logo .dot {
-    color: orange;
-  }
-
-  .menu {
-    list-style: none;
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-    font-family: "Arimo", sans-serif;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-  }
-
-  .menu a:hover {
-    color: orange;
+@media (max-width: 700px) {
+  .cabecalho {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
   }
 
   .menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    flex-direction: column;
+    gap: 15px;
   }
 
-  .cabecalho {
-    position: fixed;
-    width: 100vw;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #ddd;
-  }
-
-  .social {
-    display: flex;
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    justify-content: space-between;
-    align-items: end;
-    gap: 20px;
-  }
-
-  .social a:hover {
-    color: orange;
+  .banner {
+    margin-top: 150px;
   }
 }
