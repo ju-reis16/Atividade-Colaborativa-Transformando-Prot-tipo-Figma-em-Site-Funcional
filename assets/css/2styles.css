@@ -1,0 +1,43 @@
+.body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 24px;
+}
+
+.card {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 8px;
+    width:240px;
+    color: black;
+    padding: 16px;
+    box-shadow: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card h3{
+    margin: 0 0 8px;
+    color: black;
+}
+
+.card p{
+    margin: 0 0 12px;
+    color: black;
+}
+
+.card .bth{
+    display: inline-block;
+    background:black ;
+    color: aliceblue;
+    text-decoration:none ;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
