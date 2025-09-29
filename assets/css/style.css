@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -16,4 +17,294 @@ p {
   font-size: 20px;
   color: gray;
   line-height: 1.5;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+.Categories {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.view-btn {
+  background: #e6f4ff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background: #cce7ff;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card_breakfast {
+  width: 130px;
+  height: 150px;
+  background-image: linear-gradient(to top, rgb(226, 226, 226), rgb(255, 255, 255));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+  transition: transform 0.2s;
+}
+
+.card_vegan {
+  width: 130px;
+  height: 150px;
+  background-image: linear-gradient(to top, rgb(223, 255, 223), rgb(255, 255, 255));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+  transition: transform 0.2s;
+}
+
+.card_meat {
+  width: 130px;
+  height: 150px;
+  background-image: linear-gradient(to top, rgb(255, 230, 230), rgb(255, 255, 255));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+  transition: transform 0.2s;
+}
+
+.card_dessert {
+  width: 130px;
+  height: 150px;
+  background-image: linear-gradient(to top, rgb(255, 243, 220), rgb(255, 255, 255));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+  transition: transform 0.2s;
+}
+
+.card_lunch {
+  width: 130px;
+  height: 150px;
+  background-image: linear-gradient(to top, rgb(226, 226, 226), rgb(255, 255, 255));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+  transition: transform 0.2s;
+}
+
+.card_chocolate {
+  width: 130px;
+  height: 150px;
+  background-image: linear-gradient(to top, rgb(226, 226, 226), rgb(255, 255, 255));
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+  transition: transform 0.2s;
+}
+
+.card_breakfast:hover{
+  transform: translateY(-5px);
+}
+
+.card_vegan:hover{
+  transform: translateY(-5px);
+}
+
+.card_meat:hover{
+  transform: translateY(-5px);
+}
+
+.card_dessert:hover{
+  transform: translateY(-5px);
+}
+
+.card_lunch:hover{
+  transform: translateY(-5px);
+}
+
+.card_chocolate:hover{
+  transform: translateY(-5px);
+}
+
+.cards img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+.cards p {
+  font-weight: 500;
+  padding-top: 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #dff3fa;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.texto {
+  max-width: 50%;
+}
+
+.tag {
+  background: white;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.info span {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.autor {
+  margin: 10px 20;
+}
+
+.autor img {
+ padding: 5%;
+  height: 100px;;
+  border-radius: 70%;
+  margin-right: 20px;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.imagem img {
+  width: 400px;
+  border-radius: 20px;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+.logo {
+    font-family: "Lobster", sans-serif;
+    color: black;
+    margin-left: 1%;
+    font-size: 130%;
+    padding: 40px 60px;
+}
+
+.logo .dot {
+    color: orange;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    font-family: "Arimo", sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cabecalho {
+    position: fixed;
+    width: 100vw;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.social {
+    display: flex;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+}
+
+.social a:hover {
+  color: orange;
 }
