@@ -1,240 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodieland</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodieland</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-    <header class="cabecalho">
-        <div class="logo">Foodieland<span class="dot">.</span></div>
-
-        <nav class="menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About us</a></li>
-            </ul>
-        </nav>
-
-        <div class="social">
-            <a href="https://www.facebook.com/?locale=pt_BR">
-                <img src="./assets/img/Facebook.jpg" alt="Facebook" width="40">
-            </a>
-            <a href="https://x.com/">
-                <img src="./assets/img/Twitter.jpg" alt="Twitter" width="40">
-            </a>
-            <a href="https://www.instagram.com/">
-                <img src="./assets/img/Instagram.jpg" alt="Instagram" width="40">
-            </a>
-        </div>
-    </header>
-
-    <div class="banner">
-        <div class="texto">
-            <p class="tag">Hot Recipes</p>
-            <h1>Spicy delicious chicken wings</h1>
-            <p class="descricao">Crispy and flavorful chicken wings recipe to enjoy.</p>
-            <p class="info"><span>🔥 30 min</span> <span>👨‍🍳 John Doe</span></p>
-            <button>View Recipe</button>
-        </div>
-
-        <div class="imagem">
-            <img src="./assets/img/frango.webp" alt="Frango assado" class="frango">
-            <img src="./assets/img/image-Photoroom.png" alt="" class="confirm">
-        </div>
+  <header class="header">
+    <div class="logo">Foodieland<span class="dot">.</span></div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="#"><img src="assets/img/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/img/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="assets/img/instagram.png" alt="Instagram"></a>
     </div>
+  </header>
 
-    <section class="Categories">
-        <div class="header">
-            <h2>Categories</h2>
-            <button class="view-btn">View All Categories</button>
-        </div>
-        <div class="cards">
-            <div class="card card_breakfast">
-                <img src="./assets/img/Breakfast.png" alt="Breakfast">
-                <p>Breakfast</p>
-            </div>
-            <div class="card card_vegan">
-                <img src="./assets/img/Vegan.png" alt="Vegan">
-                <p>Vegan</p>
-            </div>
-            <div class="card card_meat">
-                <img src="./assets/img/Meat.png" alt="Meat">
-                <p>Meat</p>
-            </div>
-            <div class="card card_dessert">
-                <img src="./assets/img/Dessert.png" alt="Dessert">
-                <p>Dessert</p>
-            </div>
-            <div class="card card_lunch">
-                <img src="./assets/img/Lunch.png" alt="Lunch">
-                <p>Lunch</p>
-            </div>
-            <div class="card card_chocolate">
-                <img src="./assets/img/Chocolate.png" alt="Chocolate">
-                <p>Chocolate</p>
-            </div>
-        </div>
-    </section>
+  <section class="banner">
+    <div class="text">
+      <p class="tag">Hot Recipes</p>
+      <h1>Spicy delicious chicken wings</h1>
+      <p class="desc">Crispy and flavorful chicken wings recipe to enjoy.</p>
+      <p class="info">🔥 30 min | 👨‍🍳 John Doe</p>
+      <button>View Recipe</button>
+    </div>
+    <div class="image">
+      <img src="assets/img/frango.webp" alt="Chicken Wings">
+    </div>
+  </section>
 
-    <section>
-        <h1>Simple and tasty recipes</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>
-            labore et dolore magna aliquat enim ad minim
-        </p>
-    </section>
+  <section class="categories">
+    <div class="section-header">
+      <h2>Categories</h2>
+      <button class="view-btn">View All Categories</button>
+    </div>
+    <div class="cards">
+      <div class="card card_breakfast"><img src="assets/img/Breakfast.png"><p>Breakfast</p></div>
+      <div class="card card_vegan"><img src="assets/img/Vegan.png"><p>Vegan</p></div>
+      <div class="card card_meat"><img src="assets/img/Meat.png"><p>Meat</p></div>
+      <div class="card card_dessert"><img src="assets/img/Dessert.png"><p>Dessert</p></div>
+      <div class="card card_lunch"><img src="assets/img/Lunch.png"><p>Lunch</p></div>
+      <div class="card card_chocolate"><img src="assets/img/Chocolate.png"><p>Chocolate</p></div>
+    </div>
+  </section>
 
-    <section>
-        <h1>Check out @foodieland on Instagram</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore<br>
-            magna aliquat enim ad minim.
-        </p>
-    </section>
+  <section class="handpicked">
+    <h2>Handpicked Recipes</h2>
+    <div class="cards1">
 
-    <section>
-        <h1>Try this delicious recipe to make your day</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br>
-            incididunt ut labore et dolore magna aliquat enim ad minim.
-        </p>
-    </section>
-<div class="imagem">
-        <div class="cards1">
-
-            <div class="card1">
-                <img src="assets/css/img/martin-baron-PBgbIbOsprk-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Mixed Tropical Fruit Salad with Superfood Boosts</h3>
-                ⏱30 Minutes 🍴Healthy
-            </div>
-
-            <div class="card1">
-                <img src="assets/css/img/paras-kapoor-x5Rx6-FVEN4-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Big and Juicy Wagyu Beef Cheeseburger</h3>
-                ⏱30 Minutes 🍴Western
-            </div>
-
-            <div class="card1">
-                <img src="assets/css/img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Healthy Japanese Fried Rice with Asparagus</h3>
-                ⏱30 Minutes 🍴Healthy
-            </div>
-
-            <div class="card1">
-                <img src="assets/css/img/christine-siracusa-vzX2rgUbQXM-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Cauliflower Walnut Vegetarian Taco Meat</h3>
-                ⏱30 Minutes 🍴Eastern
-
-            </div>
-
-            <div class="card1">
-                <img src="assets/css/img/declan-sun-TsPlj-rqU9g-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Rainbow Chicken Salad with Almond Honey Mustard Dressing</h3>
-                ⏱30 Minutes 🍴Healthy
-
-            </div>
-
-            <div class="card1">
-                <img src="assets/css/img/mustafa-fatemi-Iy63wBayBhQ-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Barbeque Spicy Sandwiches with Chips</h3>
-                ⏱30 Minutes 🍴Snack
-
-            </div>
-
-            <div class="card1">
-                <img src="assets/css/img/paolo-gregotti-ccSRS1TQx90-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Firecracker Vegan Lettuce Wraps Spicy!</h3>
-                ⏱30 Minutes 🍴Seafood
-            </div>
-
-            <div class="card1">
-                <img src="assets/css/img/kouji-tsuru--LJmvGXl6yg-unsplash.jpg" alt="Imagem teste" height="200px">
-
-                <h3>Chicken Ramen Soup with Mushroom</h3>
-                ⏱30 Minutes 🍴Japanese
-            </div>
-        </div>
-      <main>
-    <section class="newsletter" aria-labelledby="newsletter-heading">
-    <!-- seção da newsletter, ligada ao título para ajudar quem usa leitor de tela -->
-      
-      <article>
-        <h2 id="newsletter-heading">Deliciousness to your inbox</h2>
-        <!-- título da newsletter -->
-        
-        <p>
-          Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqut enim ad minim
-        </p>
-        <!-- texto explicando sobre a newsletter -->
-        <form action="#" method="post" aria-label="Subscribe to newsletter" class="subscribe-form">
-        <!-- formulário para a pessoa colocar o e-mail e se inscrever -->
-          <div class="pesquisa">
-
-            <input type="email" id="email" name="email" placeholder="Your email address..." required>
-            <!-- campo onde a pessoa escreve o e-mail(obrigatório para enviar o formulário!) -->
-            
-            <button type="submit">Subscribe</button>
-            <!-- botão para enviar o e-mail -->
-          </div>
-        </form>
-      </article>
-
-      <aside aria-hidden="true" class="images">
-      <!-- parte lateral com imagens, apenas decorativa! -->
-        
-        <img src="assets/css/img/Foto Vegetais.png" alt="" role="presentation" class="left">
-        <!-- imagem, sem descrição! -->
-
-        <img src="assets/css/img/Foto do prato.png" alt="" role="presentation" class="right">
-        <!-- imagem, sem descrição! -->
-         
-      </aside>
-    </section>
-    
-  </main>
-
-    <div class="imagem">
-    <div class="cards2">
-
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/Big and Juicy Wagyu Beef.jpg" alt="hamburguer" height="200px"  width="100%">
 
             <h3>Big and Juicy Wagyu Beef Cheeseburger</h3>
         ⏱30 Minutes 🍴Snack
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/Fresh Lime Roasted Salmon with.jpg" alt="Salmon" height="200px">
 
             <h3>Fresh Lime Roasted Salmon with Ginger Sauce</h3>
         ⏱30 Minutes 🍴Fish
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/Strawberry Oatmeal Pancake.jpg" alt="Pancake" height="200px">
 
             <h3>Strawberry Oatmeal Pancake with Honey Syrup</h3>
             ⏱30 Minutes 🍴Breakfast
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/Don’t forget to eat.png" alt="Salada" height="200px">
 
             <h3>Fresh and Healthy Mixed Mayonnaise Salad</h3>
@@ -242,7 +87,7 @@
 
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/Chicken Meatballs with Cream.jpg" alt="Almôndegas" height="200px">
 
             <h3>Chicken Meatballs with Cream Cheese</h3>
@@ -250,12 +95,12 @@
 
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/foodiland.png" alt="Foto" height="300px" width="300px">
             <p></p>
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/Fruity Pancake with Orange &.jpg" alt="Pancake" height="200px">
 
             <h3>Fruity Pancake with Orange & Blueberry</h3>
@@ -263,51 +108,130 @@
 
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/The Best Easy One Pot Chicken.png" alt="frango" height="200px">
 
             <h3>The Best Easy One Pot Chicken and Rice</h3>
             ⏱30 Minutes 🍴Snack
         </div>
 
-        <div class="card2">
+        <div class="card1">
             <img src="assets/css/img/The Creamiest Creamy Chicken.jpg" alt="Macarrão" height="200px">
 
             <h3>The Creamiest Creamy Chicken and Bacon Pasta</h3>
             ⏱30 Minutes 🍴Noodles
         </div>
         </div>
-        
-  <footer>
-    <div class="text">
-      <h2>Foodieland<a>.</a></h2>
+  </section>
 
-      <div class="categorias">
+  <section class="newsletter">
+    <h2>Deliciousness to your inbox</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Your email address..." required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <div class="newsletter-images">
+      <img src="assets/img/vegetais.png" alt="">
+      <img src="assets/img/prato.png" alt="">
+    </div>
+  </section>
+
+  <section class="instagram">
+    <h2>Check out @foodieland on Instagram</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <div class="insta-grid">
+      <img src="assets/img/insta1.jpg" alt="">
+      <img src="assets/img/insta2.jpg" alt="">
+      <img src="assets/img/insta3.jpg" alt="">
+      <img src="assets/img/insta4.jpg" alt="">
+    </div>
+  </section>
+
+  <section class="simple-recipes">
+    <h2>Simple and tasty recipes</h2>
+    <div class="cards2">
+
+            <div class="card2">
+                <img src="assets/css/img/martin-baron-PBgbIbOsprk-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Mixed Tropical Fruit Salad with Superfood Boosts</h3>
+                ⏱30 Minutes 🍴Healthy
+            </div>
+
+            <div class="card2">
+                <img src="assets/css/img/paras-kapoor-x5Rx6-FVEN4-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Big and Juicy Wagyu Beef Cheeseburger</h3>
+                ⏱30 Minutes 🍴Western
+            </div>
+
+            <div class="card2">
+                <img src="assets/css/img/joseph-gonzalez-fdlZBWIP0aM-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Healthy Japanese Fried Rice with Asparagus</h3>
+                ⏱30 Minutes 🍴Healthy
+            </div>
+
+            <div class="card2">
+                <img src="assets/css/img/christine-siracusa-vzX2rgUbQXM-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Cauliflower Walnut Vegetarian Taco Meat</h3>
+                ⏱30 Minutes 🍴Eastern
+
+            </div>
+
+            <div class="card2">
+                <img src="assets/css/img/declan-sun-TsPlj-rqU9g-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Rainbow Chicken Salad with Almond Honey Mustard Dressing</h3>
+                ⏱30 Minutes 🍴Healthy
+
+            </div>
+
+            <div class="card2">
+                <img src="assets/css/img/mustafa-fatemi-Iy63wBayBhQ-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Barbeque Spicy Sandwiches with Chips</h3>
+                ⏱30 Minutes 🍴Snack
+
+            </div>
+
+            <div class="card2">
+                <img src="assets/css/img/paolo-gregotti-ccSRS1TQx90-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Firecracker Vegan Lettuce Wraps Spicy!</h3>
+                ⏱30 Minutes 🍴Seafood
+            </div>
+
+            <div class="card2">
+                <img src="assets/css/img/kouji-tsuru--LJmvGXl6yg-unsplash.jpg" alt="Imagem teste" height="200px">
+
+                <h3>Chicken Ramen Soup with Mushroom</h3>
+                ⏱30 Minutes 🍴Japanese
+            </div>
+        </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <h2>Foodieland<span class="dot">.</span></h2>
+      <div class="footer-menu">
         <a href="#">Recipes</a>
         <a href="#">Blog</a>
         <a href="#">Contact</a>
         <a href="#">About us</a>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
     </div>
-
-    <p>
-    <div class="footer-line"></div>
-    </p>
-
-    <div class="icons">
-      <img src="assets/css/img/facebook.png" alt="instagram">
-
-      <img src="assets/css/img/twitter.png" alt="twitter">
-
-      <img src="assets/css/img/instagram.png" alt="facebook">
+    <div class="footer-bottom">
+      <p>2020 Flowbase. Powered by <a href="#">Webflow</a></p>
+      <div class="social">
+        <a href="#"><img src="assets/img/facebook.png" alt=""></a>
+        <a href="#"><img src="assets/img/twitter.png" alt=""></a>
+        <a href="#"><img src="assets/img/instagram.png" alt=""></a>
+      </div>
     </div>
-    <div class="footer-text">
-
-      <p>© 2020 Flowbase. Powered by <a> Webflow </a></p>
-
   </footer>
 
 </body>
-
 </html>
